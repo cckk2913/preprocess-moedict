@@ -1,7 +1,7 @@
 # preprocess-moedict
 preprocessing word sense information in moedict-data
 
-After running the first 5 cell blocks in the notebook, [moedict-epub.git](https://github.com/g0v/moedict-epub.git)),  you get `moedict-data/dict-revised.json`.
+After running the first 5 cell blocks in the notebook,  you get `moedict-data/dict-revised.json`.
 
 `dict-revised.json` is a list of dictionaries.
 

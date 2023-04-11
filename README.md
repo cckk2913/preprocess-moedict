@@ -1,7 +1,7 @@
 # preprocess-moedict
 preprocessing word sense information in moedict-data
 
-After cloning the repos (https://github.com/g0v/moedict-data.git, https://github.com/g0v/moedict-epub.git), 
+After cloning the repos ([moedict-data.git](https://github.com/g0v/moedict-data.git), [moedict-epub.git](https://github.com/g0v/moedict-epub.git), 
     
     you get `moedict-data/dict-revised.json`.
 

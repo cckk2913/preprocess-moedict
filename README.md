@@ -1,25 +1,30 @@
 # Preprocess-moedict
-Preprocessing word sense information in moedict-data
+The main goal is to extract and pre-process word sense information from the moedict-data (by 教育部國語推行委員會). After running the first 5 cell blocks in the notebook,  you get `moedict-data/dict-revised.json`.
 
-After running the first 5 cell blocks in the notebook,  you get `moedict-data/dict-revised.json`.
+- `dict-revised.json` is a list of dictionaries.
 
-`dict-revised.json` is a list of dictionaries.
-
-Each dictionary:
-```
-(1st level) keys: 'heteronyms', 'title'
-(2nd level)  heteronyms : [{definitions:[], bopomofo, pinyin}] # 後兩者可能為空
-(3rd level)  definitions(list of senses) : 
+- The composition of one dictionary:
+  ```
+  (1st level) keys: "heteronyms", "title", "non_radical_stroke_count", "radical", "stroke_count"
+  (2nd level)  heteronyms : 
                     [
-                      {def, 
-                        quote:[], example:[],   #不一定有
-                        synonyms:'A,B', anotonyms:'A,B',   #不一定有
-                        type:'動',   #不一定有
+                      {definitions: list of dictionaries, ## each dictionary represents a sense
+                      bopomofo: str, 
+                      pinyin: str}
+                    ] 
+  (3rd level)  definitions(list of senses) : 
+                    [
+                      {def: str, 
+                        quote: list (of strings), 
+                        example: list (of strings),   
+                        synonyms: str,              ## each synonym is separated by ',' 
+                        anotonyms: str,             ## each antonym is separated by ',' 
+                        type: str,   
                       },
                       {第二個sense def 同上},
                       {第三個sense def 同上}...       
                     ]
-```
+  ```
 
 ----------------------------------------------------
 

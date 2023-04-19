@@ -1,9 +1,7 @@
 # Preprocess-moedict
-The main goal is to extract and pre-process word sense information from the moedict-data (by 教育部國語推行委員會). After running the first 5 cell blocks in the notebook,  you get `moedict-data/dict-revised.json`.
+- The main goal is to extract and pre-process word sense information from the moedict-data (by 教育部國語推行委員會). After running the first 5 cell blocks in the notebook,  you get `moedict-data/dict-revised.json`.
 
-- `dict-revised.json` is a list of dictionaries.
-
-- The composition of one dictionary:
+- `dict-revised.json` is a list of dictionaries. The composition of each dictionary:
   ```
   (1st level) keys: "heteronyms", "title", "non_radical_stroke_count", "radical", "stroke_count"
   (2nd level)  heteronyms : 

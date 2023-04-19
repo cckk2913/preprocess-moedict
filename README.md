@@ -19,7 +19,7 @@ The main goal is to extract and pre-process word sense information from the moed
                         example: list (of strings),   
                         synonyms: str,              ## each synonym is separated by ',' 
                         anotonyms: str,             ## each antonym is separated by ',' 
-                        type: str,   
+                        type: str,                  ## stands for POS (most senses in the data were annotated as ''.)
                       },
                       {第二個sense def 同上},
                       {第三個sense def 同上}...       

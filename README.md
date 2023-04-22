@@ -12,17 +12,17 @@
                       bopomofo: str, 
                       pinyin: str}
                     ] 
-  (3rd level)  definitions(list of senses) : 
+  (3rd level)  definitions(list of dictionaries) : 
                     [
-                      {def: str, 
+                      {def: str,                    ## each dictionary is a sense of this title (i.e., lemma)
                         quote: list (of strings), 
                         example: list (of strings),   
                         synonyms: str,              ## each synonym is separated by ',' 
                         anotonyms: str,             ## each antonym is separated by ',' 
                         type: str,                  ## stands for POS (most senses in the data were annotated as ''.)
                       },
-                      {第二個sense def 同上},
-                      {第三個sense def 同上}...       
+                      {2nd sense dict...},
+                      {3rd sense dict...},   
                     ]
   ```
 

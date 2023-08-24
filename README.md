@@ -1,5 +1,5 @@
 # Preprocess-moedict
-- The main goal is to extract and pre-process word sense information from the moedict-data (by 教育部國語推行委員會). 
+- The main goal is to extract and pre-process word sense information from the moedict-data. 
 
 - After running the first 5 cell blocks in the notebook,  you can acquire the data `moedict-data/dict-revised.json`.
 
